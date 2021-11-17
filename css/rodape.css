@@ -1,0 +1,17 @@
+.rodape {
+    text-align: center;
+    background: orange;
+    padding: 1.5rem 0;
+}
+
+.rodape__titulo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.rodape__descricao {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}

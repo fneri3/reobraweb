@@ -1,0 +1,28 @@
+      .beneficios {
+        padding: 3rem 3rem;
+        background: rgb(224, 224, 220);
+      }
+      
+      .beneficios__titulo {
+        text-align: center;
+        padding-bottom: 3rem;
+        font-weight: 500;
+      }
+
+      .beneficios__subtitulo {
+        font-size: 1.5rem;
+      }
+
+      .beneficios__lista {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+      }
+
+      .beneficios__item {
+          width: 30%;
+          text-align: center;
+          border-radius: 10px;
+          padding: 1rem;
+          background: #fdfdfd;
+      }

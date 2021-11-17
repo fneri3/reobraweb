@@ -1,0 +1,54 @@
+.contato {
+    background: #cccccc;
+}
+
+.contato__titulo {
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contato__descricao {
+    text-align: center;
+}
+
+.formulario {
+    background: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 30%;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__input {
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    border-radius: 5px;
+} 
+
+.mensagem {
+    border-radius: 5px;
+}
+
+.botao {
+    background: darkorange;
+    color: white;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.botao:hover {
+    background: #e20f0f;
+}
