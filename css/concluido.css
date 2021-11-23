@@ -1,0 +1,25 @@
+.conclusao {
+    margin: 250px 0 340px 0;
+    text-align: center;
+}
+
+.descricao {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.botao-inicial {
+    background: darkorange;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.inicial-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,33 @@
+.titulo-formulario{
+   text-align: center;
+   padding-top: 3.5rem ;
+}
+
+.formulario {
+   margin: 100px auto;
+   display: flex;
+   flex-direction: column;
+   padding: 0 30%;
+}
+
+.formulario_input {
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.botao {
+    background: darkorange;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.botao:hover {
+    background: darkorange;
+    background: #e20f0f;
+}
