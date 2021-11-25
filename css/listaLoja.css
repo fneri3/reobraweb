@@ -1,0 +1,37 @@
+.lista__titulo {
+    text-align: center;
+    padding: 3rem 0 ;
+}
+
+.lista__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30%;
+    align-items: center;
+}
+
+.lista__imagem {
+    width: 60%;
+    margin: 1rem 0 2rem;
+    
+}
+
+.lista__nome {
+    font-size: 2rem;
+}
+
+.lista__botao {
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.lista__link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

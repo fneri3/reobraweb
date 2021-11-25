@@ -1,11 +1,10 @@
 import { servicosProdutos } from "./produto-servicos.js"
 
-const criaNovaLinha = (nome, descricao, caminho_imagem ) => {
+const criaNovaLinha = (nome, descricao ) => {
     const linhaNovoProduto = document.createElement('li')
     const conteudo = `
         <p>${nome}</p>
         <p>${descricao}</p>
-        <img src="${caminho_imagem}"/>
         `
             
     linhaNovoProduto.innerHTML = conteudo
@@ -18,11 +17,9 @@ const tabela = document.querySelector('[data-lista]')
 const render = async () => {
     const listaProdutos = await servicosProdutos.criaProdutos()
     listaProdutos.forEach(elemento => {
-        tabela.appendChild(criaNovaLinha(elemento.nome, elemento.descricao, elemento.caminho_imagem))
+        tabela.appendChild(criaNovaLinha(elemento.nome, elemento.descricao, servicosProdutos.criaImagem()))
         
     });
 }
-
-
 
 render()
