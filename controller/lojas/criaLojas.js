@@ -5,13 +5,12 @@ const criaLoja = () => {
         })
 }
 
-let binData = null
 
 const lojaA = () => {
     return fetch('https://reobra-completo.herokuapp.com/reobra/produto/loja/1')
-    .then(resposta => {
-        return resposta.json()
-    })
+        .then(response => {
+            return response.json();
+        })
 }
 
 const lojaB = () => {
@@ -42,13 +41,15 @@ const lojaE = () => {
         })
 }
 
-
 export const servicosLojas = {
     criaLoja,
     lojaA,
     lojaB,
     lojaC,
     lojaD,
-    lojaE
+    lojaE,
 }
+
+
+
 

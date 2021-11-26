@@ -1,7 +1,7 @@
 import { servicosLojas } from "./criaLojas.js";
 
 const criaNovaLoja = (nome, descricao, preco, estoque, id) => {
-    const linhaLojaB = document.createElement('li')
+    const linhaLojaE = document.createElement('li')
     const conteudo = `
         <div class='lista__item' data-li>
             <img src='../img/imagem.jpg'/>
@@ -14,16 +14,16 @@ const criaNovaLoja = (nome, descricao, preco, estoque, id) => {
         </div>
         `
 
-        linhaLojaB.innerHTML = conteudo
-        linhaLojaB.dataset.id = id
+        linhaLojaE.innerHTML = conteudo
+        linhaLojaE.dataset.id = id
 
-    return linhaLojaB
+    return linhaLojaE
 }
 
-const tabela = document.querySelector('[data-lojaB]')
+const tabela = document.querySelector('[data-lojaE]')
 
 const render = async () => {
-    const listaLojas = await servicosLojas.lojaB()
+    const listaLojas = await servicosLojas.lojaE()
     listaLojas.forEach(elemento => {
         tabela.appendChild(criaNovaLoja(elemento.produto.nome, elemento.produto.descricao, elemento.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }), elemento.estoque, elemento.produto.id))
 
@@ -45,19 +45,19 @@ tabela.addEventListener('click', (evento) => {
     let id = botao.dataset.id
     if(id == 1){
         quantidade++
-        precoA = 23 * quantidade
+        precoA = 15 * quantidade
     } else if (id==2){
         quantidade++
-        precoB = 60 * quantidade
+        precoB = 70 * quantidade
     } else if (id==3){
         quantidade++
-        precoC = 70 * quantidade
+        precoC = 50 * quantidade
     } else if (id==4){
         quantidade++
-        precoD = 90 * quantidade
+        precoD = 65 * quantidade
     } else {
         quantidade++
-        precoE = 57 * quantidade
+        precoE = 20 * quantidade
     }
 })
 
