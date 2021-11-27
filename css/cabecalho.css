@@ -41,3 +41,8 @@
 .btn-outline-success:hover{
     background: #e20f0f
 }
+
+.buscar {
+    text-decoration: none;
+    color: white;
+}

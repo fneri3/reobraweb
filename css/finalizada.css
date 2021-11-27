@@ -1,0 +1,28 @@
+.conclusao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+    margin-top: 200px;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.botao__descricao {
+    border: none;
+    border-radius: 5px;
+    background: darkorange;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 360px;
+}
+
+.link__conclusao {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

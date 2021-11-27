@@ -32,33 +32,21 @@ const render = async () => {
 
 render()
 
-let quantidade = 0
-let precoA = parseFloat
-let precoB = parseFloat
-let precoC = parseFloat
-let precoD = parseFloat
-let precoE = parseFloat
-
 
 tabela.addEventListener('click', (evento) => {
     let botao = evento.target.closest('[data-id]')
     let id = botao.dataset.id
     if(id == 1){
-        quantidade++
-        precoA = 25 * quantidade
+        window.location.href='./carrinho.html'
     } else if (id==2){
-        quantidade++
-        precoB = 50 * quantidade
+        window.location.href='./carrinho.html'
     } else if (id==3){
-        quantidade++
-        precoC = 75 * quantidade
+        window.location.href='./carrinho.html'
     } else if (id==4){
-        quantidade++
-        precoD = 81 * quantidade
+        window.location.href='./carrinho.html'
     } else {
-        quantidade++
-        precoE = 57 * quantidade
+        window.location.href='./carrinho.html'
     }
 })
-
+    
 
